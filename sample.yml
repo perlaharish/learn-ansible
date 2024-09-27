@@ -8,10 +8,10 @@
         state: latest
 
 - name: Install apache service using roles
-    hosts: all
-    become: true
-      tasks:
-        - sample
+  hosts: all
+  become: true
+  tasks:
+    - sample
 
 
 
