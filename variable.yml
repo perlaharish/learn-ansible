@@ -1,9 +1,9 @@
-- name: print variables
+- name: variables
   hosts: all
   vars:
-    url: pingtest.com
+    URL: pingtest.com
   become: true
   tasks:
-    - name: vars printing
+    - name: variable printing
       ansible.builtin.debug:
-        msg: {{ url }}
+        msg: URL = {{ URL }}
