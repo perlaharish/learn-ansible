@@ -7,11 +7,12 @@
         name: httpd
         state: latest
 
-    - name: start the apache service
-      ansible.builtin.systemd:
-        name: httpd
-        state: restarted
-        enabled: true
+- name: Install apache service using roles
+    hosts: all
+    become: true
+      tasks:
+        - sample
+
 
 
 
