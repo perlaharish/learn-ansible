@@ -5,5 +5,5 @@
   become: true
   tasks:
     - name: vars printing
-      ansible_builtin_debug:
+      ansible.builtin.debug:
         msg: {{ url }}
