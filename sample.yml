@@ -7,9 +7,5 @@
       name: httpd
       state: latest
 
-      -name: Start apache
-      ansible_builtin.systemd:
-        name: httpd
-        state: restarted
-        enabled: true
+
 
