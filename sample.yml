@@ -10,7 +10,7 @@
 - name: Install apache service using roles
   hosts: all
   become: true
-  tasks:
+  roles:
     - sample
 
 
