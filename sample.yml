@@ -6,11 +6,13 @@
       ansible.builtin.yum:
         name: httpd
         state: latest
-               - name: start the apache service
-                 ansible.builtin.systemd:
-                  name: httpd
-                  state: restarted
-                  enabled: true
+
+    - name: start the apache service
+      ansible.builtin.systemd:
+        name: httpd
+        state: restarted
+        enabled: true
+
 
 
 
