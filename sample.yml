@@ -2,10 +2,11 @@
   hosts: all
   become: true
   tasks:
-    -name: Install apache
-    ansible_builtin.yum:
-      name: httpd
-      state: latest
+    - name: Install apache service
+      ansible.builtin.yum:
+        name: httpd
+        state: latest
+
 
 
 
