@@ -1,0 +1,9 @@
+- name: print variables
+  hosts: all
+  vars:
+    url: pingtest.com
+  become: true
+  tasks:
+    - name: vars printing
+      ansible_builtin_debug:
+        msg: {{ url }}
