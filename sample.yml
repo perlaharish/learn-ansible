@@ -1,0 +1,15 @@
+- name: Install apache service
+  hosts: web
+  become: true
+  tasks:
+    -name: Install apache
+    ansible_builtin.yum:
+      name: httpd
+      state: latest
+
+      -name: Start apache
+      ansible_builtin.systemd:
+        name: httpd
+        state: restarted
+        enabled: true
+
