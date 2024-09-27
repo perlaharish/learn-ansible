@@ -7,3 +7,5 @@
     - name: variable printing
       ansible.builtin.debug:
         msg: URL = {{ URL }}
+
+#####Ansible aAccess variables using double flower braces
