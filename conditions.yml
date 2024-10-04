@@ -1,15 +1,15 @@
-- name: Sample Condition
+- name: Sample Condition - when
   hosts: localhost
   become: true
   vars:
     fruit: true
-    veg: true
+    veg: false
   tasks:
     - name: print fruit
       ansible.builtin.debug:
-        msg: fruit is apple
-      when: "{{fruit}}"
+        msg: fruit name is apple
+      when: fruit is true
     - name: Print  Veg
       ansible.builtin.debug:
-        msg: Veg is carrot
-      when: "{{veg}}"
+        msg: Veg name is carrot
+      when: veg is true
