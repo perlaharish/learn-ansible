@@ -1,5 +1,5 @@
 - name: Sample Condition - when
-  hosts: localhost
+  connection: local
   become: true
   vars:
     fruit: true
