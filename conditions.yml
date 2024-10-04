@@ -1,0 +1,13 @@
+- name: Sample Condition
+  hosts: localhost
+  become: true
+  vars:
+    fruit: true
+    veg: false
+  tasks:
+    - name: print fruit
+      ansible.builtin.debug:
+      msg: Fruit is apple
+    - name: Print  Veg
+      ansible.builtin.debug:
+      msg: Veg is carrot
