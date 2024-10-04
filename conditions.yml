@@ -7,7 +7,9 @@
   tasks:
     - name: print fruit
       ansible.builtin.debug:
-      msg: Fruit is apple
+      msg: fruit is apple
+      when: "{{fruit}}"
     - name: Print  Veg
       ansible.builtin.debug:
       msg: Veg is carrot
+      when: "{{Veg}}"
