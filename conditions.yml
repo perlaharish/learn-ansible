@@ -8,8 +8,8 @@
     - name: print fruit
       ansible.builtin.debug:
         msg: fruit is apple
-        when: "{{fruit}}"
+      when: "{{fruit}}"
     - name: Print  Veg
       ansible.builtin.debug:
         msg: Veg is carrot
-        when: "{{Veg}}"
+      when: "{{Veg}}"
