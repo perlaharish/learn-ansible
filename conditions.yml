@@ -3,7 +3,7 @@
   become: true
   vars:
     fruit: true
-    veg: false
+    veg: true
   tasks:
     - name: print fruit
       ansible.builtin.debug:
